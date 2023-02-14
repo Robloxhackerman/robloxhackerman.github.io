@@ -83,7 +83,6 @@ div {
 }
 
 body {
-
   border-color: var(--bs-indigo);
   display: flex;
   position: relative;
@@ -120,13 +119,6 @@ body {
   pointer-events: none;
 }
 
-#preloader p {
-  color: var(--t2-color-amarillo);
-  font-size: 60px;
-  font-family: VT323;
-  text-shadow: 0 0 5px var(--t2-color-amarillo);
-}
-
 .pantalla p {
   color: var(--t2-color-amarillo);
   font-size: 30px;
@@ -136,13 +128,6 @@ body {
 
 #coso {
   margin-right: 10px;
-}
-
-.loading {
-  position: absolute;
-  display: flex;
-  bottom: 10px;
-  left: 10px;
 }
 
 .contenedor {
@@ -164,4 +149,14 @@ p {
   text-align: center;
   color: rgb(255, 255, 255);
   text-shadow: 0px 0px 11px rgb(207, 107, 35)
+}
+
+.meme {
+  min-width: 83vw;
+  height: 100%;
+  width: 128px;
+  box-shadow: 0px 0px 20px 0px var(--bs-purple);
+  border-radius: 36px;
+  width:390px;
+  height:390px;
 }
