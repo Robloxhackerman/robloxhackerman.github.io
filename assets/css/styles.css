@@ -137,6 +137,6 @@ p {
 
 .meme {
   height: 100%;
-  width:80vh;
+  max-width: 300px;
   padding: 10px;
 }
