@@ -154,9 +154,7 @@ p {
 .meme {
   min-width: 83vw;
   height: 100%;
-  width: 128px;
-  box-shadow: 0px 0px 20px 0px var(--bs-purple);
-  border-radius: 36px;
+  max-width: 85vw;
   width:390px;
   height:390px;
 }
