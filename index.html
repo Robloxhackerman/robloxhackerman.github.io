@@ -11,24 +11,34 @@
 </head>
 
 <body
+
     style="border-color: var(--bs-indigo);display: flex;position: relative;height: 100vh;background: linear-gradient(143deg, #4b2439 3%, #02000a);">
-    <div style="height: 100%;border-width: 15px;border-color: var(--bs-red);">
-        <div><img width="390" height="309" src="assets/img/Captura%20de%20pantalla%202023-02-12%20011808.png"
-                style="min-width: 83vw;height: 100%;width: 128px;box-shadow: 0px 0px 20px 0px var(--bs-purple);border-radius: 36px;">
-        </div>
-        <p
-            style="font-family: 'Annie Use Your Telescope', serif;font-size: 33px;font-weight: bold;text-align: center;color: rgb(255,255,255);text-shadow: 0px 0px 11px rgb(207,107,35);">
-            Una vez mas, 14 de febrero aqui estas...</p>
-        <p style="font-family: 'Annie Use Your Telescope', serif;font-size: 33px;
+    <div id="preloader">
+        <p class="texto" id="coso">Cargando</p>
+        <p class="texto" id="dot"></p>
+      </div>
+    <div class="pantalla" id="screen">
+        <div class="img"></div>
+
+        <div style="height: 100%;border-width: 15px;border-color: var(--bs-red);">
+            <div><img width="390" height="309" src="assets/img/Captura%20de%20pantalla%202023-02-12%20011808.png"
+                    style="min-width: 83vw;height: 100%;width: 128px;box-shadow: 0px 0px 20px 0px var(--bs-purple);border-radius: 36px;">
+            </div>
+            <p
+                style="font-family: 'Annie Use Your Telescope', serif;font-size: 33px;font-weight: bold;text-align: center;color: rgb(255,255,255);text-shadow: 0px 0px 11px rgb(207,107,35);">
+                Una vez mas, 14 de febrero aqui estas...</p>
+            <p style="font-family: 'Annie Use Your Telescope', serif;font-size: 33px;
         font-weight: bold;
         text-align: 
         center;color: rgb(255,255,255);
         text-shadow: 0px 0px 11px rgb(207,107,35);">
-            <strong>(tenes que estar desde la compu *c rie*)</strong>
-        </p>
-        <p>aaaa</p>
+                <strong>(tenes que estar desde la compu</strong>
+            </p>
+            <p>*c rie en software engineer*</p>
+        </div>
     </div>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-</body>
+    <script src="assets/bootstrap/js/script_general.js"></script>
 
+</body>
 </html>
