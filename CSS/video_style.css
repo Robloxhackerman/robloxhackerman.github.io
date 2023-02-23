@@ -1,0 +1,16 @@
+body {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.contenedor {
+    border: 10px black solid;
+    min-width: 60%;
+    min-height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

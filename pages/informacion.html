@@ -1,0 +1,82 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="/CSS/style_general.css" />
+  <link rel="stylesheet" href="/CSS/style_informacion.css" />
+
+  <title>Document</title>
+</head>
+
+<body>
+  <header></header>
+  <div id="preloader">
+    <p class="texto" id="coso">Cargando</p>
+    <p class="texto" id="dot"></p>
+  </div>
+  <main>
+    <div class="pantalla" id="screen">
+      <div class="img"></div>
+      <div class="grid">
+        <div class="borde ventana ventana_video">
+          <div class="barra_titulo">
+            <p>mensajes.exe</p>
+          </div>
+          <video id="video" class="video">
+            <source src="/recursos/videos/mega_final.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <div class="ventana panel">
+          <div class="contenedor borde boton1">
+            <div class="boton">
+              <a href="/pages/good_ending.html">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <p>GOOD ENDING :)</p>
+              </a>
+            </div>
+          </div>
+          <div class="borde contenedor boton1">
+            <div class="boton">
+              <a href="/pages/bad_ending.html">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <p class="texto_boton">BAD ENDING :(</p>
+              </a>
+            </div>
+          </div>
+          <div class="borde contenedor ventana_info coso3">
+            <div class="barra_titulo">
+              <p>dias_transcurridos_v1.exe</p>
+            </div>
+            <p id="nro_mensjaes">477</p>
+          </div>
+          <div class="contenedor coso3 barra_bt">
+            <div id="bt_play" class="borde bt">
+              <button onclick="Play()" class="icono"></button>
+              <img src="/recursos/imagenes/iconos/tocar.png" id="img_btn" class="icono" alt="" />
+            </div>
+            <div id="bt_replay" class="borde borde bt">
+              <button onclick="Replay()" class="icono"></button>
+              <img src="/recursos/imagenes/iconos/girar-a-la-izquierda.png" class="icono" alt="" />
+            </div>
+          </div>
+          <div class="boton_video"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="/js/script_general.js"></script>
+  <script src="/js/script_informacion.js"></script>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/EHMzwpC-iT4" title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen></iframe>
+</body>
+
+</html>

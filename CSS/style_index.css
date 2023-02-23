@@ -1,0 +1,113 @@
+header {
+  top: 0px;
+  position: absolute;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header p {
+  color: var(--t2-color-amarillo);
+  font-size: 80px;
+  font-family: VT323;
+  text-shadow:0 0 10px var(--t2-color-amarillo);
+  animation: entrada 2s ease-in-out;
+}
+
+
+.boton {
+  color: #fff;
+  margin: auto auto;
+  max-height: 100%;
+  max-width: fit-content;
+  align-self: flex-end;
+  animation: entrada 3.5s ease-in-out;
+}
+
+/*Boton que no es boton*/
+a {
+  /*Disposicion*/
+  max-width: 300px;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  transition: 0.2s;
+  /*Decoracion*/
+  border-radius: 0px;
+  padding: 25px 60px;
+
+  /*Fuente*/
+  letter-spacing: 4;
+  text-decoration: none;
+  font-size: 40;
+  color: var(--t2-color-amarillo);
+}
+
+#barra {
+  color: var(--t2-color-sepia-obscuro);
+  animation: animacion_letras 0.7s infinite;
+}
+
+a:hover {
+  background-color: var(--t2-color-amarillo);
+  color: var(--t2-color-consola);
+}
+a:hover p {
+  color: var(--t2-color-consola);
+}
+
+/*Animaciones*/
+
+@keyframes animacion_letras {
+  0% {
+    color: var(--t2-color-amarillo);
+  }
+
+  50% {
+    color: rgb(31, 41, 31);
+    text-shadow: 0 0 10px black;
+  }
+
+  100% {
+    color: var(--t2-color-amarillo);
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes boton_hover {
+  0% {
+    background-color: var(--t2-color-amarillo);
+  }
+  50% {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  100% {
+    background-color: var(--t2-color-amarillo);
+  }
+}
+
+@keyframes entrada {
+  0%{
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}

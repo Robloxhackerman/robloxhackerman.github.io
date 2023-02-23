@@ -1,0 +1,15 @@
+img {
+    animation: coso 0.7s ease infinite;
+}
+
+@keyframes coso {
+    0%{
+        width: 300px;
+    }
+    50% {
+        width: 1000px;
+    }
+    100% {
+        width: 300px;
+    }
+}

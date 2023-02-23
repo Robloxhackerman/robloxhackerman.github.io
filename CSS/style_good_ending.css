@@ -1,0 +1,232 @@
+* {
+    margin: 0px;
+}
+.contratos {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 30px;
+    row-gap: 0;
+}
+body {
+    overflow-y: auto !important;
+
+    background-color: var(--t2-color-consola);
+}
+
+main {
+}
+.pantalla {
+    height: auto !important;
+}
+.warpo1 {
+    overflow-wrap: break-word;
+    inline-size: 70%;
+}
+.warpo2 {
+    overflow-wrap: break-word;
+    text-align: justify;
+}
+.break {
+    text-align: center;
+    font-size: 35px !important;
+}
+
+#contenedor {
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.celda_A1 {
+    padding: 10px;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.celda_A2 {
+    padding: 10px;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.celda_A3 {
+    padding: 10px;
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.celda_B1 {
+    padding: 10px;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.celda_B2 {
+    padding: 10px;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.celda_B3 {
+    padding: 10px;
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.celda_C1 {
+    padding: 10px;
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.celda_C2 {
+    padding: 10px;
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.celda_C3 {
+    padding: 10px;
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.borde_celda {
+    border-right: var(--t2-borde-normal);
+    border-left: var(--t2-borde-normal);
+    box-shadow: 0 0 10px var(--t2-color-amarillo),
+        inset 0 0 10px var(--t2-color-amarillo);
+    background-color: var(--t2-color-consola);
+}
+
+.specs {
+    font-size: 30px !important;
+}
+
+.titulo_plan {
+    background-color: var(--t2-color-amarillo);
+}
+
+.titulo_plan p {
+    text-align: center;
+    color: var(--t2-color-consola);
+    font-size: 30px;
+}
+
+.contenedor{
+    width: 100% !important;
+}
+
+.positivo {
+    color: #55FF55 !important;
+    text-shadow: 0 0 5px #55FF55 !important;
+}
+.negativo {
+    color: #FF5555 !important;
+    text-shadow: 0 0 5px #FF5555 !important;
+}
+
+h2{
+    color: var(--t2-color-amarillo);
+    font-size: 40px;
+    font-family: VT323;
+    text-shadow: 0 0 10px var(--t2-color-amarillo);
+    text-decoration: underline;
+}
+
+footer {
+    height: 100px;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.text {
+    font-size: 100px;
+    font-family: VT323;
+    color: var(--t2-color-amarillo);
+    text-shadow: 0 0 10px var(--t2-color-amarillo);
+    text-align: center;
+}
+.dud {
+  color: #757575;
+}
+
+.preguntas-respuestas {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
+}
+
+.respuestas p {
+    text-align: left;
+}
+
+.preguntas, .respuestas {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 10px;
+}
+
+.preguntas p, .respuestas p{
+    width: 100%;
+}
+
+.preguntas p {
+    text-align: right;
+}
+
+hr {
+    width: 80%;
+    border: 3px solid var(--t2-color-amarillo);
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--t2-color-amarillo);
+    background-color: var(--t2-color-consola);
+    animation: neon1 1.5s ease-in-out infinite alternate;
+}
+
+header {
+    height: fit-content;
+    
+}
+
+header p {
+    font-family: titulos;
+    font-size: 150px;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+    line-height: 1;
+    text-decoration: none;
+    color: #fff;
+    animation: neon1 1.5s ease-in-out infinite alternate;
+  }
+  
+  
+  
+  @keyframes neon1 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff1177,
+        0 0 70px #ff1177, 0 0 80px #ff1177, 0 0 100px #ff1177, 0 0 150px #ff1177;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff1177,
+        0 0 35px #ff1177, 0 0 40px #ff1177, 0 0 50px #ff1177, 0 0 75px #ff1177;
+    }
+  }
+  /*Make stuff responsive*/
+  

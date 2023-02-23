@@ -1,0 +1,79 @@
+body {
+    overflow-x: hidden;
+}
+
+.grid {
+    height: 80%;
+    width: 95%;
+    display: flex;
+    align-items: center;
+}
+
+.panel {
+    height: 100%;
+    width: 30%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin-left: 30px;
+}
+
+
+
+.barra_titulo {
+    height: 35px;
+    width: 100%;
+    background-color: var(--t2-color-amarillo);
+}
+
+.barra_titulo p {
+    text-decoration: underline;
+    font-size: 30px;
+    margin-left: 10px;
+    text-align: left;
+    color: var(--t2-color-consola);
+    padding-top: 0px !important;
+}
+
+.ventana_info {
+    display: flex !important;
+    flex-direction: column;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    justify-content: flex-start;
+}
+
+.barra_bt {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.bt {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icono {
+    height: 60%;
+}
+
+button {
+
+    height: 100%;
+    width: 120px;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    position: absolute;
+}
+
+.bt:hover {
+    background-color: rgb(107, 113, 113);
+}
+
+
+video {
+    width: 100%;
+}

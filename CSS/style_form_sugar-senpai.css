@@ -1,0 +1,204 @@
+:root {
+    --color-back: #b481f7;
+    --color-form: #f84b8b;
+    --color-text: #ff72db;
+    --color-borde: #fcebc0;
+
+    --font-titulo: titulo;
+    --font-campo: campo;
+}
+
+@font-face {
+    font-family: campo;
+    src: url(/recursos/fuentes/bubblez/Bubblez.otf);
+}
+
+@font-face {
+    font-family: titulo;
+    src: url(/recursos/fuentes/bubblez/Bubblez.ttf);
+}
+
+@font-face {
+    font-family: texto;
+    src: url(/recursos/fuentes/mamae_que_nos_faz/Maria_lucia.ttf);
+}
+
+body {
+    background-color: rgba(208, 184, 254, 1);
+    background-image: linear-gradient(rgb(255, 255, 255, 0.5) .1em, transparent .1em), linear-gradient(90deg, rgb(255, 255, 255, 0.5) .1em, transparent .1em);
+    background-size: 3em 3em;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.contenedor-formulario {
+    max-height: 80%;
+    width: fit-content;
+    max-width: 60%;
+    padding: 35px;
+    border-radius: 300px 50px 300px 50px;
+    background-color: var(--color-form);
+    backdrop-filter: blur(10px);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+h1 {
+    font-size: 90px;
+    text-align: center;
+    font-family: var(--font-titulo);
+    font-weight: normal;
+}
+
+h2 {
+    margin-bottom: 0px;
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    inline-size: 70%;
+    color: var(--color-borde);
+}
+
+.informacion-boton {
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+
+}
+
+.informacion {
+    width: 100%;
+}
+
+.informacion-titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.informacion-frase {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.campo {
+    background: none;
+    width: 90%;
+    height: 30px;
+    border: none;
+    font-family: var(--font-campo);
+}
+
+
+
+.grid-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+}
+
+br {
+    height: 20px;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+textarea {
+    width: 100%;
+    height: 40%;
+    background: none;
+    border: none;
+}
+
+
+fieldset {
+    border-radius: 30px;
+    max-height: fit-content;
+    border: 2px solid var(--color-borde);
+    padding: 0;
+    padding-left: 20px;
+    background-color: var(--color-back);
+    box-shadow: 5px 5px black;
+}
+
+textarea:focus {
+    border: none;
+    outline: none;
+}
+
+.campo:focus {
+    outline: none;
+}
+
+.form-boton {
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:flex-start;
+}
+
+hr {
+    max-width: 80%;
+    border: 2px solid var(--color-borde);
+}
+
+legend {
+    color: white;
+    background-color: var(--color-borde);
+    border-radius: 20px;
+    padding: 0px 10px;
+    font-size: 15px;
+}
+
+.btn-enviar {
+    padding: 10px 50px;
+    border-radius: 10px;
+    border: 2px solid var(--color-borde);
+    background-color: var(--color-borde);
+    box-shadow: 2px 2px black;
+}
+
+.btn-enviar>span {
+    font-size: 40px;
+    font-family: titulo;
+    color: var(--color-back);
+}
+
+.btn-enviar:hover {
+    background-color: var(--color-back);
+}
+
+.btn-enviar:hover span {
+    color: var(--color-borde);
+}
+
+header {
+    top: 0;
+}
+
+.btn-back {
+    margin: 10px;
+    border-radius: 50px;
+    border: 2px solid var(--color-borde);
+    height: 50px;
+    width: 50px;
+    background-color: var(--color-borde);
+}
+
+.btn-back>a {
+    text-decoration: none;
+    font-size: 40px;
+    color: var(--color-back);
+}

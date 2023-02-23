@@ -1,0 +1,79 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="/CSS/style_form_sugar-senpai.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="preloader">
+    <p class="texto" id="coso">Cargando</p>
+    <p class="texto" id="dot"></p>
+  </div>
+  <header>
+    <div>
+      <button class="btn-back"><a href="/pages/good_ending.html"><</a></button>
+    </div>
+  </header>
+  <main class="main">
+    <div class="contenedor-formulario">
+      <div class="informacion">
+        <div class="informacion-titulo">
+          <h1>Sugar-Senpai Contract</h1>
+        </div>
+        <hr>
+        <div class="informacion-frase">
+          <h2>"Los amigos son como los zapatos.</h2>
+        <h2>Podemos tener muchos, pero siempre andamos con el que se la deja meter mas facil"</h2>
+        </div>
+        <br>
+      </div>
+      <form action="friend_mail.php" class="form" method="post">
+        <div class="grid-form">
+          <fieldset>
+            <legend>Nombre</legend>
+            <input class="campo" type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
+          </fieldset>
+          <fieldset>
+            <legend>Apellido</legend>
+            <input class="campo" type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido">
+          </fieldset>
+        </div>
+        <br>
+        <div class="grid-form">
+          <div>
+            <fieldset>
+              <legend>Finalizacion</legend>
+              <input class="campo" type="date" min="2023-02-14" name="fecha" id="fecha">
+            </fieldset>
+          </div>
+          <div>
+            <input class="campo" type="checkbox" name="renovacion" id="renovacion">
+          </div>
+        </div>
+        <br>
+        <fieldset>
+          <legend>E-mail</legend>
+          <input class="campo" type="email" name="correo" id="correo" placeholder="Ingrese su correo">
+        </fieldset>
+        <br>
+        <fieldset style="border-radius: 30px 30px 300px 30px;">
+          <legend>Comentarios</legend>
+          <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+        </fieldset>
+        <div class="form-boton">
+          <button class="btn-enviar">
+            <span>Enviar</span>
+          </button>
+        </div>
+      </form>
+      
+    </div>
+
+  </main>
+  <script src="/js/script_general.js"></script>
+  <script src="/js/script_form_general.js"></script>
+</body>
+
+</html>
