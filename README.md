@@ -1,3 +1,3 @@
-# SoySimp
-
-### Aca la poca dignidad que me queda -_-
+theme: jekyll-theme-minimal
+title: Octocat's homepage
+description: Bookmark this to keep an eye on my project updates!
